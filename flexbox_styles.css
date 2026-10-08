@@ -1,0 +1,152 @@
+/* 
+TODO: Add styles to match the layout in the image.
+Note: you should only need to use flexbox properties and margin/padding to create the layout.
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch;
+    gap: 2rem; 
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background-color: #2e2e2e; 
+    color: #e0e0e0;
+    padding: 3rem 2rem 2.5rem;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.footer-section p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.footer-section a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-bottom: 0.2rem;
+    align-self: flex-start;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.2rem; 
+}
+
+.social-links a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0; 
+}
+
+.footer-bottom {
+    border-top: 1px solid #444444; 
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Challenge: Use flexbox in media queries to create a responsive layout */
+@media (max-width: 300px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-section p, .footer-section h4 {
+        text-align: left;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+    }
+}
